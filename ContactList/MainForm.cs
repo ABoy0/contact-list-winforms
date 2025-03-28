@@ -16,5 +16,14 @@ namespace ContactList
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // Tạo một instance của AddContactForm
+            AddContactForm addContactForm = new AddContactForm();
+
+            // Hiển thị AddContactForm dưới dạng hộp thoại (modal)
+            addContactForm.ShowDialog();
+        }
     }
 }
